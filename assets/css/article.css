@@ -1,0 +1,372 @@
+body {
+  background: #1F1F2E;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  align-items: center;
+}
+
+body .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  filter: blur(60px);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.article {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.article .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.article .container > a {
+  position: relative;
+  font-size: 14px;
+  color: #B2B2C6;
+  padding-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.article .container > a:hover {
+  color: #B98A72;
+}
+
+.article .container > a::before {
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 10px;
+  transform: rotate(180deg);
+  bottom: 2px;
+  left: 0;
+  background-size: contain;
+  background: url('../images/has-child.svg');
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+.article .container > a:hover::before {
+  background: url('../images/has-child-gold.svg');
+  background-repeat: no-repeat;
+}
+
+.article .container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.article .container > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 480px;
+}
+
+.article .container > div > div h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+
+.article .container > div > div > div {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.article .container > div > div > div span {
+  position: relative;
+  font-size: 14px;
+  color: #B2B2C6;
+  margin-right: 35px;
+}
+
+.article .container > div > div > div .views::before {
+    content: '';
+    position: absolute;
+    height: 9px;
+    width: 14px;
+    left: -18px;
+    bottom: 4px;
+    background-size: cover;
+    background: url(../images/eye1.svg);
+}
+
+.article .container > div > div > div .game::before {
+    content: '';
+    position: absolute;
+    height: 12px;
+    width: 13px;
+    left: -18px;
+    bottom: 2px;
+    background-size: contain;
+    background: url(../images/game1.svg);
+}
+
+.article .container > div > div > span {
+  color: white;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.text {
+  width: 900px;
+}
+
+.text h2 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.text span {
+  display: block;
+  color: #B2B2C6;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.text span a {
+  border-bottom: 1px dashed white;
+  color: white;
+}
+
+.text span a:hover {
+  color: #b98a72;
+  border-bottom: 1px dashed #b98a72;
+}
+
+.text span strong {
+  color: white;
+}
+
+.text .instruction {
+  display: block;
+  position: relative;
+  width: calc(100% - 90px);
+  padding: 45px;
+  background-color: #2E2E44;
+  color: white;
+  font-weight: bold;
+}
+
+.text .instruction::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  border-right: 7px solid #1F1F2E;
+  background-color: #B98A72;
+}
+
+.text > img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.text h3 {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.text ol {
+  padding-left: 20px;
+  list-style-type: decimal;
+  margin-bottom: 40px;
+}
+
+.text ol li {
+  list-style-type: decimal;
+  font-size: 14px;
+  color: #B2B2C6;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.text > ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  margin-bottom: 40px;
+}
+
+.text > ul li {
+  list-style-type: disc;
+  font-size: 14px;
+  color: #B2B2C6;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.gallery-block {
+  width: 100%;
+  position: relative;
+  margin-bottom: 65px;
+}
+
+.gallery-block .gallery {
+  width: 100%;
+}
+
+.arrow {
+  cursor: pointer;
+  bottom: calc(50% - 20px);
+  left: -20px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #B98A72;
+  border-radius: 20px;
+}
+
+.arrow img {
+  height: 15px;
+  width: 10px;
+}
+
+.prev {
+  transform: rotate(180deg);
+}
+
+.next {
+  left: auto;
+  right: -20px!important;
+}
+
+.video {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.video > img {
+  width: 100%;
+}
+
+.video .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  margin-bottom: 100px;
+  width: 100%;
+  min-width: 700px;
+}
+
+table th {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  font-size: 14px;
+  color: white;
+  height: 40px;
+  background-color: #2E2E44;
+  border-right: 2px solid #1F1F2E;
+}
+
+table th:last-child {
+  border-right: 0;
+}
+
+table td {
+  padding: 20px;
+  font-size: 14px;
+  color: #B2B2C6;
+  border: 1px solid #2E2E44;
+}
+
+.article .container > div > div img {
+  display: none;
+}
+
+.thumb-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.thumb-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+  outline-width: 0;
+}
+
+@media (max-width: 1130px) {
+  .article .container > div > div h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  .advantages > div {
+    width: 100%;
+  }
+  .article .container > div > img {
+    display: none;
+  }
+  .article .container > div > div img {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .text {
+    width: calc(100% - 50px);
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  table th {
+    padding: 15px;
+    height: auto;
+  }
+  .arrow {
+    display: none!important;
+  }
+  .article .container > div {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #2E2E44;
+  }
+}
+
+@media (max-width: 560px) {
+  .article .container > div > div {
+    width: 100%;
+  }
+}

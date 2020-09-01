@@ -1,0 +1,169 @@
+body {
+  background-color: #1F1F2E;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.about .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about .container div {
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+}
+
+.about .container div h1 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.about .container div span {
+  font-size: 14px;
+  line-height: 24px;
+  color: #B2B2C6;
+}
+
+.advantages {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #323292;
+}
+
+.advantages .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1130px;
+  background-color: transparent!important;
+}
+
+.advantages .container > div {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.about .container img {
+  width: 560px;
+  height: 300px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background: url('../images/stats.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stats .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stats .container div {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+}
+
+.stats .container div h1 {
+  font-size: 72px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.stats .container div h2 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 25px
+}
+
+.stats .container div span {
+  font-size: 14px;
+  color: #B2B2C6;
+  line-height: 24px;
+}
+
+.text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.text .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text .container h1 {
+  margin-bottom: 30px;
+  color: white;
+  font-size: 40px;
+}
+
+.text .container span {
+  margin-bottom: 100px;
+  color: #B2B2C6;
+  line-height: 24px;
+}
+
+.about .container div img {
+  display: none;
+}
+
+@media (max-width: 1130px) {
+  .advantages > div {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .about .container div img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .about .container > img {
+    display: none;
+  }
+  .stats .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .advantages > div > div {
+    margin-bottom: 50px!important;
+    margin-top: 50px!important;
+  }
+  .stats {
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-position: center center!important;
+  }
+  .stats .container > div {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .advantages .container {
+    flex-direction: column;
+    height: auto;
+  }
+}

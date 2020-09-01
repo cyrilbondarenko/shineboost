@@ -1,0 +1,320 @@
+body {
+  background: url('../images/background-slide.jpg') #1F1F2E;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.catalog {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+
+.catalog .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog .container > h1 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.catalog .container .games {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.catalog .container .categories {
+  justify-content: flex-start;
+}
+
+.catalog .container .categories a {
+  width: auto!important;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.catalog .container .games a {
+  padding: 20px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  background-color: #2E2E44;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.catalog .container .games a:hover {
+  background-color: #3E3EB7;
+}
+
+.catalog .container .games a img {
+  margin-right: 10px;
+}
+
+.catalog .container .sort {
+  width: 160px!important;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.catalog .container .sort > img {
+  position: absolute;
+  transform: rotate(90deg);
+  top: 8px;
+  width: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+.catalog .container .sort > span {
+  font-size: 14px;
+  color: #B2B2C6;
+  margin-right: 10px;
+}
+
+.catalog .container .sort > div {
+  position: relative;
+}
+
+.catalog .container .sort > div > span {
+  display: block;
+  position: relative;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  padding: 10px;
+  width: 80px;
+  border-bottom: 1px solid transparent;
+}
+
+.catalog .container .sort > div .sub {
+  position: absolute;
+  top: 100%;
+  display: none;
+  flex-direction: column;
+  padding-bottom: 5px;
+  z-index: 5;
+  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: white;
+  font-size: 14px;
+  color: #B2B2C6;
+  font-weight: bold;
+  width: 80px;
+}
+.catalog .container .sort > div .sub span {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.catalog .container .sort > div .sub span:hover {
+  color: #B98A72;
+}
+
+.breadcrumbs {
+  margin-bottom: 0px;
+}
+
+.catalog .container .catalog-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.catalog .container .catalog-list .catalog-item {
+  position: relative;
+  display: flex!important;
+  flex-direction: column;
+  width: 270px!important;
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+
+.catalog .container .catalog-list .catalog-item:hover .mask {
+  opacity: 1;
+}
+
+.catalog .container .catalog-list .catalog-item:hover .name {
+  color: #B98A72;
+}
+
+.catalog .container .catalog-list .catalog-item .mask {
+  width: 100%;
+  height: 240px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(31,31,46,0.8);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.catalog .container .catalog-list .catalog-item .mask a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 178px;
+  height: 28px;
+  background-color: #323292;
+  border: 1px solid #323292;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+}
+
+.catalog .container .catalog-list .catalog-item .mask a:hover {
+  background-color: #3E3EB7;
+  border: 1px solid #3E3EB7;
+}
+
+.catalog .container .catalog-list .catalog-item .mask a:last-child:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.catalog .container .catalog-list .catalog-item .mask a:last-child {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 10px;
+}
+
+.catalog .container .catalog-list .catalog-item img {
+  height: 240px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.catalog .container .catalog-list .catalog-item > span {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+
+.catalog .container .catalog-list .catalog-item .price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.catalog .event {
+  width: 100%;
+  height: 240px;
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+}
+
+.catalog .event span {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  background-color: #323292;
+  font-size: 14px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.catalog .event span:last-child {
+  margin-bottom: 0px;
+}
+
+.catalog .limited {
+  width: 100%;
+  height: 240px;
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  top: 0;
+  left: 0;
+}
+
+.catalog .limited span {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 2px;
+  background-color: #B98A72;
+  font-size: 14px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.catalog .limited span:last-child {
+  margin-right: 0px;
+}
+
+.catalog .container .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.catalog .container .button-container a {
+  width: 218px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.catalog .container .button-container a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1130px) {
+  .catalog .container .games a {
+    width: calc(49% - 40px);
+    margin-bottom: 10px;
+  }
+  .catalog .container .catalog-list .catalog-item img {
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 560px) {
+  .catalog .container .games a {
+    width: calc(100% - 40px);
+    margin-bottom: 10px;
+  }
+  .catalog .container .catalog-list .catalog-item {
+    margin-right: 0px!important;
+    width: 100%!important;
+  }
+  .catalog .container .categories a {
+    width: calc(100% - 40px)!important;
+    margin-right: 0;
+  }
+}

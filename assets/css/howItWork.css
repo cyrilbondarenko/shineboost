@@ -1,0 +1,167 @@
+body {
+  background-color: #1F1F2E;
+}
+
+.howItWorks {
+  display: flex;
+  justify-content: center;
+}
+
+.howItWorks .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.howItWorks .container h1 {
+  font-size: 40px;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.howItWorks .container span {
+  font-size: 14px;
+  font-weight: 24px;
+  margin-bottom: 50px;
+  color: #B2B2C6;
+  width: 850px;
+  line-height: 24px;
+}
+
+.hiw-panels {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: linear-gradient(to right, #2E2E44 95%, transparent 95%);;
+}
+
+.hiw-panels .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hiw-panels .container > div {
+  width: 190px;
+  display: flex;
+  justify-content: center;
+  background-color: #2E2E44;
+}
+
+.hiw-panels .container > div div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 230px;
+}
+
+.hiw-panels .container > div div img {
+  z-index: 1;
+  height: 48px;
+}
+
+.hiw-panels .container > div div h2 {
+  z-index: 1;
+  font-size: 24px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.hiw-panels .container > div div span {
+  z-index: 1;
+  font-size: 14px;
+  line-height: 24px;
+  color: #B2B2C6;
+}
+
+.hiw-panels .container > div div::after {
+  content: '1';
+  font-size: 150px;
+  position: absolute;
+  font-weight: bold;
+  color: #1F1F2E;
+  z-index: 0;
+  left: 60px;
+  top: 0;
+}
+
+.hiw-panels .container > #first div::after {
+  content: '1';
+}
+
+.hiw-panels .container > #second div::after {
+  content: '2';
+}
+
+.hiw-panels .container > #third div::after {
+  content: '3';
+}
+
+.hiw-panels .container > #fourth div::after {
+  content: '4';
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button a {
+  width: 260px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  background-color: #323292;
+}
+
+.button a:hover {
+  background-color: #3E3EB7;
+}
+
+@media (max-width: 1260px) {
+  .hiw-panels {
+    background: #2E2E44;
+  }
+}
+
+@media (max-width: 1130px) {
+  .hiw-panels {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .hiw-panels .container > div {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  .howItWorks .container span {
+    width: 100%;
+  }
+  .button .container {
+    justify-content: center;
+  }
+  .questions .answers .answer {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hiw-panels .container > div {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .hiw-panels .container > div:last-child {
+    margin-bottom: 0px;
+  }
+}

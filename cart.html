@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" charset="utf-8"></script>
+    <script src="assets/js/cart.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <script src="assets/js/script.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <!--[if IE]>
+  <style>
+  body {
+    overflow: hidden;
+  }
+  <div class='popup-ie'>
+  <div class="popup">
+    <h1>Woops!</h1>
+    <span>It seams that you're using an unsupported browser!</span>
+    <span>Please try different web-browser.</span>
+  </div>
+  </div>
+</style>
+<![endif]-->
+<div class="cookies">
+  <span>Cookies are important for our website to operate properly. <br> To learn more about cookies and data we collect, check out our <a href="#">Privacy Policy</a></span>
+  <a href="#">Ok, I Accept</a>
+</div>
+<a href="#" class="toTop">
+  <img src="assets/images/arrow.svg" alt="">
+</a>
+<header>
+  <div class="container">
+    <a href="#">
+      <img src="assets/images/logo.png" alt="" class="logo">
+    </a>
+    <ul>
+      <li><a href="index.php">Home</a></li>
+      <li>
+        <a href="catalog.php">Catalog</a>
+        <div class="sub-catalog">
+          <div class="sub-games">
+            <a href="#" class="wow-classic">
+              <img src="assets/images/game.svg" alt="">
+              <span>World of Warcraft: Classic</span>
+            </a>
+            <a href="#" class="destiny-2 selected">
+              <img src="assets/images/game.svg" alt="">
+              <span>Destiny 2</span>
+            </a>
+            <a href="#">
+              <img src="assets/images/game.svg" alt="">
+              <span>Destiny 2</span>
+            </a>
+            <a href="#">
+              <img src="assets/images/game.svg" alt="">
+              <span>Destiny 2</span>
+            </a>
+            <a href="#">
+              <img src="assets/images/game.svg" alt="">
+              <span>Destiny 2</span>
+            </a>
+            <a href="#">
+              <img src="assets/images/game.svg" alt="">
+              <span>Destiny 2</span>
+            </a>
+          </div>
+          <div class="sub-game destiny-2 selected">
+            <div class="title">
+              <img src="assets/images/game.svg" alt="">
+              <span>Destiny 2</span>
+            </div>
+            <div class="categories">
+              <ul class="main-cat">
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+              </ul>
+              <ul class="sub-cat">
+                <li><a href="#" class="has-child">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="sub-game wow-classic">
+            <div class="title">
+              <img src="assets/images/game.svg" alt="">
+              <span>Wow Classic</span>
+            </div>
+            <div class="categories">
+              <ul class="main-cat">
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+              </ul>
+              <ul class="sub-cat">
+                <li><a href="#" class="has-child">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="about.php">About</a></li>
+      <li><a href="news.php">News</a></li>
+      <li><a href="howItWork.php">How it works</a></li>
+    </ul>
+    <div class="search">
+      <button type="button" name="button"><img src="assets/images/search.svg" alt=""></button>
+      <input type="text" name="" value="" placeholder="Search">
+      <div class="sub-search">
+        <span>Ulduar Timewalking</span>
+        <span>Ulduar Timewalking</span>
+        <span>Ulduar Timewalking</span>
+        <a href="#">Show All</a>
+      </div>
+    </div>
+    <a href="#" class="cart">
+      <div class="value">
+        2
+      </div>
+    </a>
+    <div class="region">
+      <img src="assets/images/arrow.svg" alt="" class="arrow">
+      <img src="assets/images/us.svg" alt="">
+      <div class="sub">
+        <a href="">
+          <img src="assets/images/eu.svg" alt="">
+          <span>Europe</span>
+        </a>
+      </div>
+    </div>
+    <img src="assets/images/burger.svg" alt="" class="burger">
+    <img src="assets/images/cross.svg" alt="" class="close">
+  </div>
+</header>
+
+    <h1>
+      <div class="container">
+        Shopping Cart
+      </div>
+    </h1>
+    <div class="breadcrumbs">
+      <div class="container">
+        <a href="#" class="step-1-bread">Step 1</a>
+        <a href="#" class="step-2-bread">Step 2</a>
+        <a href="#" class="step-3-bread">Step 3</a>
+      </div>
+    </div>
+    <div class="step-1">
+      <div class="container">
+        <table cellspacing='0'>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </tr>
+          <tr>
+            <td class="product">
+              <img src="assets/images/catalog-item.jpg" alt="">
+              <div>
+                <h2>Vanilla Pre-Raid Bis Gear</h2>
+                <div class="option">
+                  <span>Powerleveling Option:</span>
+                  <strong>110–120 Leveling</strong>
+                </div>
+                <div class="option">
+                  <span>Powerleveling Option:</span>
+                  <strong>110–120 Leveling</strong>
+                  <strong>110–120 Leveling</strong>
+                </div>
+                <div class="option">
+                  <span>Powerleveling Option:</span>
+                  <strong>110–120 Leveling</strong>
+                  <strong>110–120 Leveling</strong>
+                </div>
+              </div>
+            </td>
+            <td class="price">
+              <span class="hidden">Price</span>
+              $154.95
+            </td>
+            <td class="qty">
+              <span class="hidden">Quantity</span>
+              <input type="number" name="" value="1" placeholder="1">
+            </td>
+            <td class="total">
+              <span class="hidden">Total</span>
+              <span>$154.95</span>
+              <div class='close'></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="product">
+              <img src="assets/images/catalog-item.jpg" alt="">
+              <div>
+                <h2>Vanilla Pre-Raid Bis Gear</h2>
+                <div class="option">
+                  <span>Powerleveling Option:</span>
+                  <strong>110–120 Leveling</strong>
+                </div>
+                <div class="option">
+                  <span>Powerleveling Option:</span>
+                  <strong>110–120 Leveling</strong>
+                  <strong>110–120 Leveling</strong>
+                </div>
+                <div class="option">
+                  <span>Powerleveling Option:</span>
+                  <strong>110–120 Leveling</strong>
+                  <strong>110–120 Leveling</strong>
+                </div>
+              </div>
+            </td>
+            <td class="price">
+              <span class="hidden">Price</span>
+              $154.95
+            </td>
+            <td class="qty">
+              <span class="hidden">Quantity</span>
+              <input type="number" name="" value="1" placeholder="1">
+            </td>
+            <td class="total">
+              <span class="hidden">Total</span>
+              <span>$154.95</span>
+              <div class='close'></div>
+            </td>
+          </tr>
+        </table>
+        <div>
+          <div class="coupon">
+            <input type="text" name="" value="" placeholder="Coupon code">
+            <a href="#">Apply Coupon</a>
+          </div>
+          <div class="checkout">
+            <div class="order-total">
+              <span>Order total</span>
+              <strong>$174.95</strong>
+            </div>
+            <a href="#" id="step-1">Proceed to Chechout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="step-2">
+      <div class="container">
+        <h2>Fill in order info</h2>
+        <div class="inputs">
+          <input type="text" name="" value="" placeholder="test@shineboost.com" class="incorrect">
+          <input type="text" name="" value="" placeholder="test@shineboost.com">
+          <input type="text" name="" value="" placeholder="test@shineboost.com">
+          <input type="text" name="" value="" placeholder="test@shineboost.com">
+          <input type="text" name="" value="" placeholder="test@shineboost.com">
+          <input type="text" name="" value="" placeholder="test@shineboost.com">
+          <div class="select">
+            <span class="selected">
+              <span>110-120 Leveling</span>
+              <img src="assets/images/arrow.svg" alt="" class="arrow">
+            </span>
+            <div class="sub-selects">
+              <span class="selected">110-120 Leveling</span>
+              <span>10-20 Leveling</span>
+              <span>80-90 Leveling</span>
+            </div>
+          </div>
+          <div class="select">
+            <span class="selected">
+              <span>110-120 Leveling</span>
+              <img src="assets/images/arrow.svg" alt="" class="arrow">
+            </span>
+            <div class="sub-selects">
+              <span class="selected">110-120 Leveling</span>
+              <span>10-20 Leveling</span>
+              <span>80-90 Leveling</span>
+            </div>
+          </div>
+        </div>
+        <div class="payment">
+          <h3>Payment Method</h3>
+          <div class="select">
+            <div class="selected">
+              <div><img src="assets/images/visa-master.png" alt=""><span>Visa/Master Card</span></div>
+              <img src="assets/images/arrow.svg" alt="" class="arrow">
+            </div>
+            <div class="sub-selects">
+              <div class="selected"><img src="assets/images/visa-master.png" alt=""><span>Visa/Master Card</span></div>
+              <div><img src="assets/images/visa-master.png" alt=""><span>Visa/Master Card</span></div>
+              <div><img src="assets/images/visa-master.png" alt=""><span>Visa/Master Card</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="check">
+          <input type="checkbox" name="" value="" id="check1">
+          <label for="check1">I agree with Terms of Service and Privacy Policy</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" name="" value="" id="check2">
+          <label for="check2">Subscribe to our newsletter</label>
+        </div>
+        <div class="order-total">
+          <a href="#" id="step-2">Buy Now</a>
+          <div>
+            <span>Order total</span>
+            <strong>$174.95</strong>
+          </div>
+        </div>
+        <span>Learn more about PayPal <a href="">here</a>. Please use a personal PayPal account. Payments made from business accounts cannot be processed at the moment.</span>
+      </div>
+    </div>
+    <div class="step-3">
+      <div class="container">
+        <h2>Now you will be redirected to the payment page...</h2>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="links">
+          <div>
+            <h2>Catalog</h2>
+            <ul>
+              <li><a href="#">WoW Boost</a></li>
+              <li><a href="#">WoW Boost</a></li>
+              <li><a href="#">WoW Boost</a></li>
+              <li><a href="#">WoW Boost</a></li>
+            </ul>
+          </div>
+          <div class="popular">
+            <h2>Most Popular</h2>
+            <ul>
+              <li><a href="#">The Eternal Palace Heroic Boost</a></li>
+              <li><a href="#">The Eternal Palace Heroic Boost</a></li>
+              <li><a href="#">The Eternal Palace Heroic Boost</a></li>
+              <li><a href="#">The Eternal Palace Heroic Boost</a></li>
+              <li><a href="#">The Eternal Palace Heroic Boost</a></li>
+              <li><a href="#">The Eternal Palace Heroic Boost</a></li>
+              <li><a href="#">The Eternal Palace Heroic Boost</a></li>
+              <li><a href="#">The Eternal Palace Heroic Boost</a></li>
+            </ul>
+          </div>
+          <div class="subscribe">
+            <div class="unsubscribe">
+              <h2>Subscribe</h2>
+              <span>Sign up to any of our newsletter channels and get 10% DISCOUNT on your first order as a special welcome gift</span>
+              <div class="input">
+                <input type="text" name="" value="" placeholder="your email">
+                <button type="button" name="button"><img src="assets/images/arrow.svg" alt=""></button>
+              </div>
+            </div>
+            <div class="success">
+              <h2>Have successfully subscribed</h2>
+              <span>Congratulations, you have successfully subscribed to the newsletter</span>
+              <a href="#">Subscribe again</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav">
+          <a class="trustpilot" href="#">
+            <img src="assets/images/trustpilot.png" alt="">
+            <span>See our 677 reviews on Trustpilot</span>
+          </a>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Documents</a></li>
+            <li><a href="#">Impressum</a></li>
+            <li><a href="#">Term & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Map site</a></li>
+          </ul>
+          <div class="media">
+            <a href="#"><img src="assets/images/twitter.svg" alt=""></a>
+            <a href="#"><img src="assets/images/skype.svg" alt=""></a>
+            <a href="#"><img src="assets/images/instagram.svg" alt=""></a>
+            <a href="#"><img src="assets/images/facebook.svg" alt=""></a>
+            <a href="#"><img src="assets/images/discord.svg" alt=""></a>
+            <a href="#"><img src="assets/images/mail.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright">
+        <span>© 2019, Shine Boost. All Rights Reserved.</span>
+        <div class="payments">
+          <img src="assets/images/paypal.svg" alt="">
+          <img src="assets/images/bank.svg" alt="">
+          <img src="assets/images/apple.svg" alt="">
+          <img src="assets/images/amazon.svg" alt="">
+          <img src="assets/images/bitcoin.svg" alt="">
+          <img src="assets/images/skrill.svg" alt="">
+          <img src="assets/images/g2a.svg" alt="">
+          <img src="assets/images/klarna.svg" alt="">
+          <img src="assets/images/neteller.svg" alt="">
+        </div>
+        
+      </div>
+    </footer>
+  </body>
+</html>

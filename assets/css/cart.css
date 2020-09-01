@@ -1,0 +1,700 @@
+body {
+  background-color: #1F1F2E;
+  display: flex;
+  background-position: top right!important;
+  background-repeat: no-repeat!important;
+  flex-direction: column;
+  align-items: center;
+}
+
+body > h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  color: white;
+  font-size: 40px;
+}
+
+.breadcrumbs .container a:last-child {
+  color: #B2B2C6;
+  font-weight: normal;
+}
+
+.breadcrumbs .container .step-1-bread {
+  color: white;
+  font-weight: bold;
+}
+
+#step-1:hover {
+  background-color: #3E3EB7;
+}
+
+#step-2:hover {
+  background-color: #3E3EB7;
+}
+
+.success .container > a:hover {
+  background-color: #3E3EB7;
+}
+
+.empty a:hover {
+  background-color: #3E3EB7;
+}
+
+.step-1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.step-1 input[type='text']:focus {
+  border-bottom: 1px solid white!important;
+}
+
+.step-2 input[type='text']:focus {
+  border-bottom: 1px solid white!important;
+}
+
+.step-1 input[type='number']:focus {
+  border-bottom: 1px solid white!important;
+}
+
+.step-1 .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-1 table {
+  width: 100%;
+}
+
+.step-1 table th {
+  font-size: 14px;
+  font-weight: normal;
+  padding-bottom: 10px;
+  text-align: left;
+  color: #B2B2C6;
+  border-bottom: 1px solid #2E2E44;
+  margin-bottom: 30px;
+}
+
+.step-1 table tr td {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  vertical-align: top;
+  border-bottom: 1px solid #2E2E44;
+}
+
+.step-1 table tr .product img {
+  width: 175px;
+  height: 155px;
+  margin-right: 40px;
+  float: left;
+}
+
+.step-1 table tr .product div {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-1 table tr .product div h2 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.step-1 table tr .product div .option {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.step-1 table tr .product div .option span {
+  font-size: 14px;
+  color: white;
+  line-height: 20px;
+}
+
+.step-1 table tr .product div .option strong {
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.step-1 table tr .price {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding-right: 50px;
+}
+
+.step-1 table tr .qty {
+  padding-right: 50px;
+}
+
+.step-1 table tr .qty input {
+  width: 40px;
+  height: 30px;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #44445C;
+  font-size: 14px;
+  color: white;
+  outline: none;
+  transition: 0.2s;
+}
+
+.step-1 table tr .total {
+  position: relative;
+  padding-right: 100px;
+}
+
+.step-1 table tr .total span {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.step-1 table tr .total .close {
+  cursor: pointer;
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 0;
+  top: 46.5px;
+  background: url('../images/cross.svg');
+}
+
+.step-1 table tr .total .close:hover {
+  background: url('../images/cross-gold.svg');
+}
+
+.step-1 .container > div {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.step-1 .container > div .coupon {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.step-1 .container > div .coupon input {
+  height: 39px;
+  border: 0;
+  border-bottom: 1px solid #44445C;
+  font-size: 14px;
+  color: white;
+  width: 140px;
+  margin-right: 15px;
+  background: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+.step-1 .container > div .coupon input:focus {
+  border-bottom: 1px solid #fff;
+}
+
+.step-1 .container > div .coupon a {
+  width: 158px;
+  height: 38px;
+  border: 1px solid #44445C;
+  background: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+.step-1 .container > div .coupon a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.step-1 .container > div .checkout {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-1 .container > div .checkout a {
+  background-color: #323292;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  width: 255px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-1 .container > div .checkout .order-total {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 25px;
+}
+
+.step-1 .container > div .checkout .order-total span {
+  color: #B2B2C6;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.step-1 .container > div .checkout .order-total strong {
+  font-size: 24px;
+  color: white;
+}
+
+.step-2 {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.step-2 .container > span {
+  font-size: 14px;
+color: #b2b2c6;
+margin-top: 25px;
+width: 350px;
+line-height: 20px;
+}
+
+.step-2 .container > span a {
+  color: white;
+  border-bottom: 1px dashed white;
+}
+
+.step-2 .container > span a:hover {
+  color: #B98A72;
+  border-bottom: 1px dashed #B98A72;
+}
+
+.step-2 .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-2 h2 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.step-2 .inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: auto;
+  height: 200px;
+  margin-bottom: 40px;
+  width: 760px;
+}
+
+.step-2 .inputs .select {
+  width: 360px;
+  height: 40px;
+}
+
+.step-2 .inputs input {
+  width: 360px;
+  height: 40px;
+  border: 0;
+  outline: 0;
+  color: white;
+  background: none;
+  border-bottom: 1px solid #44445C;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.step-2 h3 {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.step-2 .payment {
+  margin-bottom: 50px;
+}
+
+.step-2 .payment .select {
+  width: 360px;
+  height: 40px;
+}
+
+.step-2 .check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.step-2 .check label {
+  color: white;
+  transition: 0.2s;
+}
+
+.step-2 .order-total {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.step-2 .order-total a {
+  width: 350px;
+  height: 50px;
+  background-color: #323292;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.step-2 .order-total div {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-2 .order-total div span {
+  font-size: 14px;
+  color: #B2B2C6;
+  line-height: 24px;
+}
+
+.step-2 .order-total div strong {
+  font-size: 24px;
+  color: white;
+}
+
+.step-2 .select {
+  position: relative;
+  color: white;
+  font-size: 14px;
+  width: 270px;
+  height: 35px;
+}
+
+.step-2 .select .sub-selects {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  width: calc(100% - 50px);
+  padding: 25px;
+  background: #2E2E44;
+  z-index: 2;
+}
+
+.step-2 .select .sub-selects .selected {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.step-2 .select .sub-selects span {
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.step-2 .select .sub-selects span:hover {
+  color: #B98A72;
+}
+
+.step-2 .select .sub-selects span:last-child {
+  margin-bottom: 0px;
+}
+
+.step-2 .select .sub-selects div {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.step-2 .select .sub-selects div img {
+  margin-right: 10px;
+}
+
+.step-2 .select .sub-selects div:hover {
+  color: #B98A72;
+}
+
+.step-2 .select .sub-selects div:last-child {
+  margin-bottom: 0px;
+}
+
+.step-2 .select > .selected {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #44445C;
+  cursor: pointer;
+}
+
+.step-2 .select > .selected > div {
+  display: flex;
+  align-items: center;
+}
+
+.step-2 .select > .selected > div img {
+  margin-right: 10px;
+}
+
+.step-2 .select > .selected .arrow {
+  height: 15px;
+  width: 10px;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  transition: 0.5s;
+}
+
+.step-3 {
+  display: none;
+  justify-content: center;
+  width: 100%;
+  height: 70vh
+}
+
+.step-3 h2 {
+  font-size: 24px;
+  color: white;
+}
+
+.success {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.success .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.success .container h2 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 25px;
+  line-height: 30px;
+}
+
+.success .container span {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.success .container ol {
+  list-style-type: decimal;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 30px;
+  line-height: 24px;
+}
+
+.success .container ol strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.success .container ol li {
+  position: relative;
+  left: 15px;
+  list-style-type: decimal;
+  margin-bottom: 5px;
+}
+
+.success .container a {
+  width: 260px;
+  height: 50px;
+  background-color: #323292;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 150px;
+}
+
+.no-success span {
+  color: #B2B2C6!important;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+}
+
+.empty h1 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  line-height: 1.13;
+}
+
+.empty span {
+  font-size: 14px;
+  color: #B2B2C6;
+  margin-bottom: 50px;
+}
+
+.empty a {
+  width: 260px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  background-color: #323292;
+}
+
+.hidden {
+  display: none;
+  font-size: 14px!important;
+  color: #B2B2C6!important;
+  line-height: 24px!important;
+  margin-bottom: 5px!important;
+  font-weight: normal!important;
+}
+
+@media (max-width: 1130px) {
+  table tr:first-child {
+    display: none;
+  }
+  table tr {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+    border-bottom: 1px solid #2E2E44;
+  }
+  table tr td {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0px!important;
+    padding: 0!important;
+  }
+  table tr .product img {
+    margin-bottom: 30px;
+  }
+  .step-1 table tr .product div h2 {
+    margin-bottom: 40px;
+  }
+  table tr .price {
+    margin-top: 30px;
+  }
+  table tr .total {
+    position: static!important;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  table tr .qty {
+    position: relative;
+    margin-bottom: -60px;
+    left: 150px;
+    bottom: 55px;
+  }
+  .step-1 table tr .total .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .hidden {
+    display: block;
+  }
+  .step-1 .container > div {
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+  .step-1 .container > div .coupon {
+    margin-bottom: 40px;
+  }
+  body > h1 {
+    font-size: 32px;
+  }
+  .step-2 .inputs {
+    height: auto;
+    width: auto;
+  }
+  .step-2 .inputs input {
+    margin-bottom: 25px;
+  }
+  .step-2 .inputs .select {
+    margin-bottom: 25px;
+  }
+  .empty h1 {
+    font-size: 32px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .no-success {
+    background: url('../images/oops.svg');
+    background-position: 0px 125%;
+    background-repeat: no-repeat!important;
+    background-size: contain!important;
+  }
+  .body-no-success {
+    background: #1F1F2E!important;
+  }
+  body {
+    background-position: -50px 100px!important;
+    background-size: 175%!important;
+  }
+}
+
+@media (max-width: 440px) {
+  .step-2 .inputs input {
+    width: 100%;
+  }
+  .step-2 .inputs .select {
+    width: 100%;
+  }
+  .step-2 .payment .select {
+    width: 100%;
+  }
+  .step-2 .order-total {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .step-2 .order-total > a {
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+  .step-1 .container > div .checkout .order-total span {
+    margin-bottom: 5px;
+  }
+  .step-1 .container > div .checkout .order-total {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .step-1 .container > div .checkout a {
+    width: 100%;
+  }
+  .step-2 .container > span {
+    font-size: 14px;
+  color: #b2b2c6;
+  margin-top: 25px;
+  width: 100%;
+  line-height: 20px;
+  }
+}

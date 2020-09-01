@@ -1,0 +1,152 @@
+body {
+  background-color: #1F1F2E;
+}
+
+.news {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px!important;
+}
+
+.news .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.news .container > h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.news .container ul {
+  white-space: nowrap;
+  display: flex;
+  overflow: auto;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+}
+
+.news .container ul > li {
+  font-size: 14px;
+  color: #B2B2C6;
+  border-bottom: 1px dashed #B2B2C6;
+  margin-right: 20px;
+}
+
+.news .container ul > .selected {
+  font-weight: bold;
+  color: white;
+  border-bottom: 1px dashed transparent;
+}
+
+.news .container ul li:hover {
+  cursor: pointer;
+  color: #B98A72;
+  border-color: #B98A72;
+}
+
+.news-block {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.news-item {
+  display: flex!important;
+  flex-direction: column;
+  width: 365px!important;
+  margin-bottom: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.news-item > img {
+  width: 100%;
+  margin-bottom: 25px;
+  height: 170px;
+}
+
+.news-item > h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+.news-item:hover > h2 {
+  color: #B98A72;
+}
+
+.news-item > span {
+  line-height: 24px;
+  font-size: 14px;
+  color: #B2B2C6;
+  margin-bottom: 10px;
+}
+
+.news-item .info {
+  display: flex;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.news-item .info .date {
+  margin-right: 35px;
+}
+
+.news-item .info .views {
+  position: relative;
+}
+
+.news-item .info .views::before {
+  content: '';
+  position: absolute;
+  height: 9px;
+  width: 14px;
+  left: -20px;
+  bottom: 2px;
+  background-size: cover;
+  background: url('../images/eye.svg');
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.button-container a {
+  width: 220px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+.button-container a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 440px) {
+  .news-item {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%!important;
+  }
+  .news-item > img {
+    height: auto;
+  }
+  .news .container ul {
+    display: flex;
+  }
+}

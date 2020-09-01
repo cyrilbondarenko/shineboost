@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" charset="utf-8"></script>
+    <script src="assets/js/product.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="assets/js/script.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <!--[if IE]>
+  <style>
+  body {
+    overflow: hidden;
+  }
+  <div class='popup-ie'>
+  <div class="popup">
+    <h1>Woops!</h1>
+    <span>It seams that you're using an unsupported browser!</span>
+    <span>Please try different web-browser.</span>
+  </div>
+  </div>
+</style>
+<![endif]-->
+<div class="cookies">
+  <span>Cookies are important for our website to operate properly. <br> To learn more about cookies and data we collect, check out our <a href="#">Privacy Policy</a></span>
+  <a href="#">Ok, I Accept</a>
+</div>
+<a href="#" class="toTop">
+  <img src="assets/images/arrow.svg" alt="">
+</a>
+<header>
+  <div class="container">
+    <a href="#">
+      <img src="assets/images/logo.png" alt="" class="logo">
+    </a>
+    <ul>
+      <li><a href="index.php">Home</a></li>
+      <li>
+        <a href="catalog.php">Catalog</a>
+        <div class="sub-catalog">
+          <div class="sub-games">
+            <a href="#" class="wow-classic">
+              <img src="assets/images/game.svg" alt="">
+              <span>World of Warcraft: Classic</span>
+            </a>
+            <a href="#" class="destiny-2 selected">
+              <img src="assets/images/game.svg" alt="">
+              <span>Destiny 2</span>
+            </a>
+            <a href="#">
+              <img src="assets/images/game.svg" alt="">
+              <span>Destiny 2</span>
+            </a>
+            <a href="#">
+              <img src="assets/images/game.svg" alt="">
+              <span>Destiny 2</span>
+            </a>
+            <a href="#">
+              <img src="assets/images/game.svg" alt="">
+              <span>Destiny 2</span>
+            </a>
+            <a href="#">
+              <img src="assets/images/game.svg" alt="">
+              <span>Destiny 2</span>
+            </a>
+          </div>
+          <div class="sub-game destiny-2 selected">
+            <div class="title">
+              <img src="assets/images/game.svg" alt="">
+              <span>Destiny 2</span>
+            </div>
+            <div class="categories">
+              <ul class="main-cat">
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+              </ul>
+              <ul class="sub-cat">
+                <li><a href="#" class="has-child">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="sub-game wow-classic">
+            <div class="title">
+              <img src="assets/images/game.svg" alt="">
+              <span>Wow Classic</span>
+            </div>
+            <div class="categories">
+              <ul class="main-cat">
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+                <li><a href="#">Battle for Azeroth</a></li>
+              </ul>
+              <ul class="sub-cat">
+                <li><a href="#" class="has-child">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+                <li><a href="#">Farm & Leveling</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="about.php">About</a></li>
+      <li><a href="news.php">News</a></li>
+      <li><a href="howItWork.php">How it works</a></li>
+    </ul>
+    <div class="search">
+      <button type="button" name="button"><img src="assets/images/search.svg" alt=""></button>
+      <input type="text" name="" value="" placeholder="Search">
+      <div class="sub-search">
+        <span>Ulduar Timewalking</span>
+        <span>Ulduar Timewalking</span>
+        <span>Ulduar Timewalking</span>
+        <a href="#">Show All</a>
+      </div>
+    </div>
+    <a href="#" class="cart">
+      <div class="value">
+        2
+      </div>
+    </a>
+    <div class="region">
+      <img src="assets/images/arrow.svg" alt="" class="arrow">
+      <img src="assets/images/us.svg" alt="">
+      <div class="sub">
+        <a href="">
+          <img src="assets/images/eu.svg" alt="">
+          <span>Europe</span>
+        </a>
+      </div>
+    </div>
+    <img src="assets/images/burger.svg" alt="" class="burger">
+    <img src="assets/images/cross.svg" alt="" class="close">
+  </div>
+</header>
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <a href="#">Catalog</a>
+        <a href="#">World of Warcraft Classic</a>
+        <a href="#">PvE</a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="container">
+        <div class="product-image">
+          <img src="assets/images/product3.jpg" alt="">
+          <div class="new">
+            new
+          </div>
+        </div>
+        <div class="product-desc">
+          <h1>Vanilla Pre-Raid</h1>
+          <div class="product-image">
+            <img src="assets/images/product3.jpg" alt="">
+            <div class="new">
+              new
+            </div>
+          </div>
+          <span>Here you can make a purchase Gearing in Vanilla WoW. We will farm all slots in dungeons which are best in slot before raid.</span>
+          <div class="setting">
+            <h2>Powerleveling Option</h2>
+            <div class="select">
+              <span class="selected">
+                <span>110-120 Leveling</span>
+                <img src="assets/images/arrow.svg" alt="">
+              </span>
+              <div class="sub-selects">
+                <span class="selected">110-120 Leveling</span>
+                <span>10-20 Leveling</span>
+                <span>80-90 Leveling</span>
+              </div>
+            </div>
+          </div>
+          <div class="setting">
+            <h2>Extra Options</h2>
+            <div class="check">
+              <input type="checkbox" name="" value="" id="check">
+              <label for="check">
+                <span>Speed Leveling (+$5)</span>
+                <div class="question">
+                  <img src="assets/images/triangle.png" alt="" class="tri">
+                  <img src="assets/images/question.svg" alt="">
+                  <div class="answer">
+                    <span>Choose this option if you would like to speed your powerleveling service, <strong>110-120 leveling</strong> will be done in no lenger than 24 hourse</span>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="setting">
+            <h2>Scarlet Monastery boost rewards</h2>
+            <div class="radio">
+              <input type="radio" name="check" value="" id="radio1">
+              <label for="radio1">
+                <span>Fast clear of the chosen dungeon</span>
+              </label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="check" value="" id="radio2">
+              <label for="radio2">
+                <span>Fast clear of the chosen dungeon</span>
+              </label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="check" value="" id="radio3">
+              <label for="radio3">
+                <span>Fast clear of the chosen dungeon</span>
+              </label>
+            </div>
+          </div>
+          <div class="setting">
+            <h2>Select Gathering Profession</h2>
+            <div class="options">
+              <div class="selected">
+                <img src="assets/images/option.jpg" alt="">
+              </div>
+              <div>
+                <img src="assets/images/option.jpg" alt="">
+              </div>
+              <div>
+                <img src="assets/images/option.jpg" alt="">
+              </div>
+              <div>
+                <img src="assets/images/option.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="setting">
+            <h2>Select your character’s current and goal level</h2>
+            <div class="slider-range"></div>
+          </div>
+          <div class="qty">
+            <div class="input">
+              <label for="qty">QTY</label>
+              <input type="text" name="" value="" id='qty' placeholder="1">
+            </div>
+            <span>$40,95</span>
+            <a href="#">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="description">
+      <div class="container">
+        <div class="mobile-select">
+          <img src="assets/images/arrow.svg" alt="" class='arrow'>
+          <span>Service Info
+          </span>
+          <div class="sub">
+            <span class="service-info">Service Info</span>
+            <span class="description">Description</span>
+            <span class="loot-info">Loot Info</span>
+            <span class="attention">Attention</span>
+          </div>
+        </div>
+        <ul class="tabs">
+          <li class="service-info selected">Service Info</li>
+          <li class="description">Description</li>
+          <li class="loot-info">Loot Info</li>
+          <li class="attention">Attention</li>
+        </ul>
+        <div class="tab-text service-info selected">
+          World of Warcraft Classic is an epic and modern recreation of original World of Warcraft game released back in 2004, putting it in the most stable state of last patch 1.12.1 (before the launch of pre Burning Crusade Expansion patch) bringing players the most authentic experience on Azeroth including original classic world, races, classes, character models, skills, talent trees, replicated leveling experience, dungeons, legendary 40 ppl raids and much more. To truly emulate the original game's updates through the content patches, content in Classic will release in phases like it was in original game: Blackwing Lair, The Temple of Ahn'Qiraj and Naxxramas raids, battlegrounds like <strong>Warsong Gulch</strong> and Alterac Valley, and certain items and quests will become available later in coming updates. The maximum level of the player characters is set to 60 and reaching max level in WoW Vanilla can be really difficult and time consuming task. At the same time it is vital in order to fully immerse yourself in WoW Classic end game and therefore we are ready to provide you with 1-60 character leveling boost service. Welcome again to a world of honor... a world of mystery... a world of danger... The World of Warcraft! <br>
+  You can buy WoW Classic Custom leveling boost carry with account sharing only. Our professional and trusted Mmonster players will kindly boost your character with this World of Warcraft Classic Custom leveling boosting service really fast so lean back and watch your character collects all those tasty rewards and achievements and tremendously grows in power!
+        </div>
+        <div class="tab-text description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="tab-text loot-info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="tab-text attention">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div>
+    <div class="best-sellers">
+      <div class="container">
+        <h1>Check our best sellers</h1>
+        <div class="top">
+          <div class="slider">
+            <div class="slide">
+              <div class="mask">
+                <a href="#">Add to Cart</a>
+                <a href="#">More</a>
+              </div>
+              <img src="assets/images/product3.jpg" alt="">
+              <span class="name">Operation: Mechagon</span>
+              <span class="price">$40</span>
+            </div>
+            <div class="slide">
+              <div class="mask">
+                <a href="#">Add to Cart</a>
+                <a href="#">More</a>
+              </div>
+              <img src="assets/images/product3.jpg" alt="">
+              <span class="name">Operation: Mechagon</span>
+              <span class="price">$40</span>
+            </div>
+            <div class="slide">
+              <div class="mask">
+                <a href="#">Add to Cart</a>
+                <a href="#">More</a>
+              </div>
+              <img src="assets/images/product3.jpg" alt="">
+              <span class="name">Operation: Mechagon</span>
+              <span class="price">$40</span>
+            </div>
+            <div class="slide">
+              <div class="mask">
+                <a href="#">Add to Cart</a>
+                <a href="#">More</a>
+              </div>
+              <img src="assets/images/product3.jpg" alt="">
+              <span class="name">Operation: Mechagon</span>
+              <span class="price">$40</span>
+            </div>
+            <div class="slide">
+              <div class="mask">
+                <a href="#">Add to Cart</a>
+                <a href="#">More</a>
+              </div>
+              <img src="assets/images/product3.jpg" alt="">
+              <span class="name">Operation: Mechagon</span>
+              <span class="price">$40</span>
+            </div>
+          </div>
+          <div class="arrow prev">
+            <img src="assets/images/arrow.svg" alt="">
+          </div>
+          <div class="arrow next">
+            <img src="assets/images/arrow.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="advantages">
+      <div>
+        <div>
+          <img src="assets/images/advantage1.svg" alt="">
+          <h1>We are online now and 24/7</h1>
+          <span>We will contact you and start working on your order within 7 minutes</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="assets/images/advantage2.svg" alt="">
+          <h1>We are online now and 24/7</h1>
+          <span>We will contact you and start working on your order within 7 minutes</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="assets/images/advantage3.svg" alt="">
+          <h1>We are online now and 24/7</h1>
+          <span>We will contact you and start working on your order within 7 minutes</span>
+        </div>
+      </div>
+      <div>
+        <div class="howItWorks">
+          <img src="assets/images/hiw.svg" alt="">
+          <h1>We offer the easiest and most convenient way to earn all possible in-game services both in PvE and PvP in the world!</h1>
+          <a href="#">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="reviews">
+      <div class="container">
+        <div class="reviewsSource">
+          <h1>Shine Boost Reviews</h1>
+          <div class="slider-block">
+            <div class="arrow next">
+              <img src="assets/images/arrow.svg" alt="">
+            </div>
+            <div class="arrow prev">
+              <img src="assets/images/arrow.svg" alt="">
+            </div>
+            <div class="reviews-slider">
+              <a href="#" class="trustpilot">
+                <img src="assets/images/trustpilot.png" alt="">
+                <span>See our 677 reviews on Trustpilot</span>
+              </a>
+              <a href="#" class="trustpilot">
+                <img src="assets/images/trustpilot.png" alt="">
+                <span>See our 677 reviews on Trustpilot</span>
+              </a>
+            </div>
+          </div>
+          <div class="otherReviews">
+            <a href="#"><img src="assets/images/ownedcore.png" alt=""></a>
+            <a href="#"><img src="assets/images/epicnpc.png" alt=""></a>
+            <a href="#"><img src="assets/images/elite.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dominate">
+      <div class="container">
+        <h1>Dominate the game today</h1>
+        <span>Either you want to level up the fastest way or need some gold to upgrade your profession or learn new skills, Boosthive is in action. Our players know how to provide vanilla boost service fast and easy: raid attunements, shaman totems quest-line, warlock summon pet quest and everything you might be interested in.</span>
+        <strong>Why should I buy a vanilla boost with Boosthive?</strong>
+        <ul>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+        </ul>
+        <span>Contact us today to get started and enjoy the process and World of Warcraft together with us!</span>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="links">
+          <div>
+            <h2>Catalog</h2>
+            <ul>
+              <li><a href="#">WoW Boost</a></li>
+              <li><a href="#">WoW Boost</a></li>
+              <li><a href="#">WoW Boost</a></li>
+              <li><a href="#">WoW Boost</a></li>
+            </ul>
+          </div>
+          <div class="popular">
+            <h2>Most Popular</h2>
+            <ul>
+              <li><a href="#">The Eternal Palace Heroic Boost</a></li>
+              <li><a href="#">The Eternal Palace Heroic Boost</a></li>
+              <li><a href="#">The Eternal Palace Heroic Boost</a></li>
+              <li><a href="#">The Eternal Palace Heroic Boost</a></li>
+              <li><a href="#">The Eternal Palace Heroic Boost</a></li>
+              <li><a href="#">The Eternal Palace Heroic Boost</a></li>
+              <li><a href="#">The Eternal Palace Heroic Boost</a></li>
+              <li><a href="#">The Eternal Palace Heroic Boost</a></li>
+            </ul>
+          </div>
+          <div class="subscribe">
+            <div class="unsubscribe">
+              <h2>Subscribe</h2>
+              <span>Sign up to any of our newsletter channels and get 10% DISCOUNT on your first order as a special welcome gift</span>
+              <div class="input">
+                <input type="text" name="" value="" placeholder="your email">
+                <button type="button" name="button"><img src="assets/images/arrow.svg" alt=""></button>
+              </div>
+            </div>
+            <div class="success">
+              <h2>Have successfully subscribed</h2>
+              <span>Congratulations, you have successfully subscribed to the newsletter</span>
+              <a href="#">Subscribe again</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav">
+          <a class="trustpilot" href="#">
+            <img src="assets/images/trustpilot.png" alt="">
+            <span>See our 677 reviews on Trustpilot</span>
+          </a>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Documents</a></li>
+            <li><a href="#">Impressum</a></li>
+            <li><a href="#">Term & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Map site</a></li>
+          </ul>
+          <div class="media">
+            <a href="#"><img src="assets/images/twitter.svg" alt=""></a>
+            <a href="#"><img src="assets/images/skype.svg" alt=""></a>
+            <a href="#"><img src="assets/images/instagram.svg" alt=""></a>
+            <a href="#"><img src="assets/images/facebook.svg" alt=""></a>
+            <a href="#"><img src="assets/images/discord.svg" alt=""></a>
+            <a href="#"><img src="assets/images/mail.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright">
+        <span>© 2019, Shine Boost. All Rights Reserved.</span>
+        <div class="payments">
+          <img src="assets/images/paypal.svg" alt="">
+          <img src="assets/images/bank.svg" alt="">
+          <img src="assets/images/apple.svg" alt="">
+          <img src="assets/images/amazon.svg" alt="">
+          <img src="assets/images/bitcoin.svg" alt="">
+          <img src="assets/images/skrill.svg" alt="">
+          <img src="assets/images/g2a.svg" alt="">
+          <img src="assets/images/klarna.svg" alt="">
+          <img src="assets/images/neteller.svg" alt="">
+        </div>
+        
+      </div>
+    </footer>
+  </body>
+</html>
